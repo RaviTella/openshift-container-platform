@@ -1,4 +1,4 @@
-﻿{
+{
 	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
 	"contentVersion": "1.0.0.0",
 	"parameters": {
@@ -312,10 +312,10 @@
 		"newStorageAccountRegistry": "[concat('registry', uniqueString(concat(resourceGroup().id, 'registry')))]",
 		"newStorageAccountPersistentVolume1": "[concat('pv1sa', uniqueString(concat(resourceGroup().id, 'persistentvolume1')))]", 
 		"newStorageAccountPersistentVolume2": "[concat('pv2sa', uniqueString(concat(resourceGroup().id, 'persistentvolume2')))]", 
-		"addressPrefix": "10.0.0.0/8",
-		"masterSubnetPrefix": "10.1.0.0/16",
-		"nodeSubnetPrefix": "10.2.0.0/16",
-		"virtualNetworkName": "openshiftvnet",
+		"addressPrefix": "10.200.200.0/23",
+		"masterSubnetPrefix": "/subscriptions/0a00a942-df57-4abb-a3ee-928400d30e51/resourceGroups/Networking-Resource/providers/Microsoft.Network/virtualNetworks/onemtc-vnet-east/subnets/onemtc-vnet-east-subnet1",
+		"nodeSubnetPrefix": "/subscriptions/0a00a942-df57-4abb-a3ee-928400d30e51/resourceGroups/Networking-Resource/providers/Microsoft.Network/virtualNetworks/onemtc-vnet-east/subnets/onemtc-vnet-east-subnet1",
+		"virtualNetworkName": "/subscriptions/0a00a942-df57-4abb-a3ee-928400d30e51/resourceGroups/onemtc-vnets_rg/providers/Microsoft.Network/virtualNetworks/onemtc-vnet-east",
 		"masterSubnetName": "mastersubnet",
 		"nodeSubnetName": "nodesubnet",
 		"bastionPublicIp": "bastionpublicip",
